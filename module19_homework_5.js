@@ -1,10 +1,12 @@
 class ElectricalAppliance {
-    constructor (power, name, weight, plug) {
+    constructor (power, name, weight, plug, test) {
         this.power = power
         this.name = name,
         this.weight = weight,
-        this.plug = plug
+        this.plug = plug;
     }
+
+    test = 20;
 
     getPower() {
         return `Power of the electric device ${power} kilowatt`;
@@ -16,8 +18,8 @@ class ElectricalAppliance {
 }
 
 class HandTools extends ElectricalAppliance{
-    constructor (power, name, weight, operatingMode, plug) {
-        super (power, name, weight, plug);
+    constructor (power, name, weight, operatingMode, plug, test) {
+        super (power, name, weight, plug, test);
         this.operatingMode = operatingMode;
     }
 
@@ -66,4 +68,3 @@ function totalPowerConsumption (obj1, obj2) {
   
   
 totalPowerConsumption(Drill, WashingMachine);
-  

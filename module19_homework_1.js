@@ -4,11 +4,17 @@ function ownProperties (obj) {
     }
 }
 
-/* function ElectricalAppliance (power, name) {
-    this.power = power;
-    this.name = name;
+/* test */
+
+/* const TestObj1 = {
+    name: "test1", 
 }
 
-const Drill = new ElectricalAppliance (2, "Drill");
+const TestObj2 = Object.create(TestObj1);
 
-ownProperties(Drill); */
+TestObj2.ownCity = "Piter";
+
+console.log(TestObj2);
+
+ownProperties (TestObj2);
+ */
